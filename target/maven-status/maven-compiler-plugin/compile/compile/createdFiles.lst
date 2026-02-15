@@ -1,0 +1,5 @@
+com/egov/authservice/CredentialRepository.class
+com/egov/authservice/AuthEvent.class
+com/egov/authservice/AuthServiceApplication.class
+com/egov/authservice/Credential.class
+com/egov/authservice/AppConfig.class

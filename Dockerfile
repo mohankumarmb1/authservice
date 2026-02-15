@@ -2,7 +2,7 @@
 #INSTALLATION OF THE OPERATING SYSTEM
 FROM openjdk:17-jdk
 
-LABEL authors="indiagator"
+LABEL authors="Mohan"
 
 #PLACEMENT OF THE EXECUTABLE [MICROSERVICE] ON THE IMAGE
 COPY target/cbtspring24-dev-1.jar app.jar
