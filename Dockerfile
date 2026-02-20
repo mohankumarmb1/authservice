@@ -5,7 +5,7 @@ FROM openjdk:17-jdk
 LABEL authors="mkb"
 
 #PLACEMENT OF THE EXECUTABLE [MICROSERVICE] ON THE IMAGE
-COPY target/uth-service-dev-1.jar uth-service.jar
+COPY target/auth-service-dev.jar auth-service.jar
 
 #EXPOSE PORTS FOR INCOMING TRAFFIC - HOST_PORT:CONTAINER_PORT
 EXPOSE 8090:8090
@@ -16,4 +16,4 @@ EXPOSE 8090:8090
 # RUN apt-get install -y curl
 
 #ENTRYPOINT OF THE CONTAINER THROUGH THE MICROSERVICE
-ENTRYPOINT ["java","-jar","uth-service.jar"]
+ENTRYPOINT ["java","-jar","auth-service.jar"]

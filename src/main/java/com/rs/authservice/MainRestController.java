@@ -13,7 +13,7 @@ import java.time.Instant;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/auth")
 public class MainRestController
 {
     private static final Logger logger = LoggerFactory.getLogger(MainRestController.class);
@@ -44,7 +44,7 @@ public class MainRestController
         createAccountWebClient
                 .post()
                 .uri(uriBuilder -> uriBuilder
-                        .path("internal/create/account")
+                        .path("customer/create/account")
                         .queryParam("cust_id", savedCredential.getId())
                         .build())
                 .retrieve()
